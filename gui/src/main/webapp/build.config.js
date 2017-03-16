@@ -85,7 +85,7 @@ module.exports = {
             'restangular/dist/restangular.min.js',
             'lodash/dist/lodash.min.js',
             'angular-material-data-table/dist/md-data-table.min.js',
-            'angular-json-tree/build/angular-json-tree.min.js',
+            'angular-json-tree/dist/angular-json-tree.min.js',
             'angular-messages/angular-messages.min.js',
 			'NeXt/js/next.min.js'
         ],

@@ -162,7 +162,7 @@ define(['lodash'], function () {
          * @param errorCbk
          */
         this.getNetwork = function(successCbk, errorCbk) {
-            Restangular.one('restconf').one('operational').one('ietf-network:network').one('of-l3-dci').get().then(
+            Restangular.one('restconf').one('operational').one('network-topology:network-topology').one('topology').one('flow%3A1').get().then(
                 function(data){
                     var networkObj = new NetworkModel(data);
                     self.wrap(networkObj);

@@ -15,7 +15,7 @@ require.config({
 		'next-ui' : 'vendor/NeXt/js/next.min',
         'angular-material-data-table' : 'vendor/angular-material-data-table/dist/md-data-table.min',
 		'i-multi-select' : 'assets/packages/i-multi-select/isteven-multi-select',
-        'angular-json-tree' : 'vendor/angular-json-tree/build/angular-json-tree.min',
+        'angular-json-tree' : 'vendor/angular-json-tree/dist/angular-json-tree.min',
 		'angular-messages' : 'vendor/angular-messages/angular-messages.min'
 	},
 	shim : {

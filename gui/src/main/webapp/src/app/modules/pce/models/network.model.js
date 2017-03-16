@@ -227,7 +227,15 @@ define([], function () {
              * @param data
              */
             function initFilling(data){
-                networkObj = data && data.network && data.network.length ? data.network[0] : {};
+                var topologyData = data && data.topology && data.topology.length ? data.topology[0] : {};
+                networkObj['network-id'] = topologyData['topology-id'];
+                networkObj['ietf-network-topology:link'] = topologyData.link;
+                networkObj['node'] = topologyData.node.map(
+                  function(node) {
+                      node['ietf-network-topology:termination-point'] = node['termination-point'];
+                      return node;
+                  }
+                );
                 cloneObj(networkObj, self);
             }
 
